@@ -125,7 +125,21 @@ nav nav-obj.active{
     background-size: contain;
 }
 
-.img:hover{
+.imagem a{
+    align-self: center;
+    justify-self: center;
+    display: block;
+    position: relative; 
+    z-index: 2;
+    background-color: black;
+    border-radius: 30px;
+    height: 35vh;
+    width: 35vw;
+    margin-bottom: 5vh;
+    background-size: contain;
+}
+
+.imagem a:hover{
     transition: 0.5s ease-in-out;
     opacity: 0.15;
     scale: 1.09;
