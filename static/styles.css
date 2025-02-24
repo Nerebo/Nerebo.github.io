@@ -1,1 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;700;800;900&display=swap');
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+    background-color: #020412;
+    scroll-behavior: smooth;
+}
+
+.container{
+    display: inline-block;
+    margin-top: 30vh;
+    margin-left: 5vw;
+    margin-right: 10vw;
+    height: 60vh;
+}
+
+.texto{
+    color: rgb(0, 110, 5);
+    font-size: 5em;
+    border-right: 3px solid;
+    width: 15ch;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        digitando 1.5s steps(15),
+        cursor .4s step-end infinite alternate;
+}
+
+.subtexto{
+    padding-left: 90px;
+    width: 90%;
+    color: rgb(0, 110, 5);
+    text-shadow: 0 0 7px rgb(0, 120, 5);
+    font-size: 1.5em;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    color: rgb(0, 75, 5);
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    position: fixed;
+    z-index: 3;
+}
+
+.nav-obj{
+    text-align: center;
+    margin-top: 2vh;
+    font-size: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.nav-obj:hover{
+    color: rgb(0, 245, 5);
+    text-shadow: 0 0 7px rgb(0, 255, 5);
+    transition: 1s;
+    cursor: pointer;
+}
+
+nav nav-obj.active{
+    color: rgb(0, 245, 5);
+    text-shadow: 0 0 7px rgb(0, 255, 5);
+
+}
+
+.title{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    color: rgb(0, 110, 5);
+    text-shadow: 0 0 7px rgb(0, 120, 5);
+    font-size: 50px;
+}
+
+.container-img{
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem img {
+    align-self: center;
+    justify-self: center;
+    display: block;
+    position: relative; 
+    z-index: 2;
+    background-color: black;
+}
+
+.imagem h2{
+    margin-top: 5vh;
+    margin-left: 10vw;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    z-index: 1;
+}
+
+.imagem p {
+    margin-top: 10vh;
+    margin-left: 10vw;
+    width: 30vw;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    z-index: 1;}
+
+.img{
+    border-radius: 30px;
+    height: 35vh;
+    width: 35vw;
+    margin-bottom: 5vh;
+    background-size: contain;
+}
+
+.img:hover{
+    transition: 0.5s ease-in-out;
+    opacity: 0.15;
+    scale: 1.09;
+}
+
+.footer{
+    height: 5vh;
+}
+
+.footer img{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.footer img:first-of-type{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    margin-left: 3vw;
+    border-radius: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.footer a:first-child{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: 3vw;
+    background-color: transparent;
+    z-index: 3;
+}
+
+.footer a{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    z-index: 3;
+}
+
+.divider{
+    border: rgb(0, 255, 0) 3px solid;
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+    height: 3px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    animation: glow infinite alternate 2s;
+}
+
+@keyframes glow{
+    from{    border: rgb(0, 50, 0) 3px solid;    }
+}
+
+@keyframes cursor {
+    50% {border-color: transparent}
+}
+
+@keyframes digitando {
+    from{ width: 0 }
+}
