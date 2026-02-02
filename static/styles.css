@@ -21,11 +21,12 @@
     color: rgb(0, 110, 5);
     font-size: 5em;
     font-weight: 500;
-    width: 17.5ch;
 }
 
 .texto{
-    width: auto;
+    width: 17ch;
+    font-weight: 700;
+    font-style: bold;
     white-space: nowrap;
     border-right: 30px solid;
     overflow: hidden;
@@ -94,18 +95,18 @@ nav nav-obj.active{
     justify-content: center;
 }
 
-.imagem img {
+.imagem {
     align-self: center;
     justify-self: center;
     display: block;
     position: relative; 
     z-index: 2;
-    background-color: black;
+    background-color: transparent;
 }
 
 .imagem h2{
-    margin-top: 5vh;
-    margin-left: 10vw;
+    margin-top: 2vh;
+    margin-left: 5vw;
     position: absolute;
     color: rgb(255, 255, 255);
     background-color: transparent;
@@ -113,8 +114,8 @@ nav nav-obj.active{
 }
 
 .imagem p {
-    margin-top: 10vh;
-    margin-left: 10vw;
+    margin-top: 5vh;
+    margin-left: 5vw;
     width: 30vw;
     position: absolute;
     color: rgb(255, 255, 255);
@@ -140,7 +141,10 @@ nav nav-obj.active{
     height: 35vh;
     width: 35vw;
     margin-bottom: 5vh;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
 }
 
 .imagem a:hover{
@@ -189,18 +193,46 @@ nav nav-obj.active{
     z-index: 3;
 }
 
+
+@media screen and (max-width: 600px) {
+*{max-width: 100%}
+
 .divider{
-    border: rgb(0, 255, 0) 3px solid;
-    width: 90%;
-    align-self: center;
-    justify-self: center;
-    height: 3px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    animation: glow infinite alternate 2s;
+    width: 100%;
 }
 
+.texto{
+    margin-top: -50%;
+    font-size: 0.43em;
+    font-style: bold;
+    font-weight: 1000;
+    width: 17.5ch;
+    animation: 
+        cursor .4s step-end infinite alternate;
+}
 
+.subtexto{
+    padding-left: 50px;
+}
+
+.container{
+    margin-bottom: -30%;
+}
+
+nav{
+    visibility: hidden;
+}
+
+.imagem a{
+    width: 40vw;
+    height: 25vh;
+}
+
+.imagem p, h2{
+    visibility: hidden;
+}
+
+}
 
 @keyframes glow{
     from{    border: rgb(0, 50, 0) 3px solid;    }
