@@ -23,7 +23,7 @@
 }
 
 .texto{
-    width: 17ch;
+    width: 16ch;
     font-weight: 700;
     font-style: bold;
     white-space: nowrap;
@@ -31,7 +31,7 @@
     overflow: hidden;
     margin-left: 2vw;
     animation: 
-        digitando 1.5s steps(16) forwards,
+        digitando 1s steps(16) forwards,
         cursor .4s step-end infinite alternate;
 }
 
@@ -246,7 +246,7 @@ nav nav-obj.active{
     font-size: 0.43em;
     font-style: bold;
     font-weight: 1000;
-    width: 17.5ch;
+    width: 16.5ch;
     animation: 
         cursor .4s step-end infinite alternate;
 }
@@ -320,6 +320,6 @@ nav{
 
 @keyframes digitando {
     from { width: 0ch; }
-    to { width: 17ch; }
+    to { width: 15ch; }
 }
 

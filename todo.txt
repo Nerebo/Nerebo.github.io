@@ -1,0 +1,5 @@
+Urgente:
+- Modificar as cores do texto, colocar algo mais claro e com melhor contraste com o fundo
+
+Backlog:
+- Trocar entre open/close quando estiver aberto ou fechado a descrição e a stack
