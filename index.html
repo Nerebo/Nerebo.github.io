@@ -1,58 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Portifolio</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./static/styles.css'>
-    <script src='./static/styles.css'></script>
-    <script src='./static/script.js'></script>
-</head>
-<nav>
-    <a class="nav-obj" href="#sobre"> >About me</a>
-    <a class="nav-obj" href="#portifolio"> >Portfolio </a>
-    <a class="nav-obj" href="#contato"> >Contact </a>
-</nav>
-<body>
-    <section id="sobre">
-            
-
-    <div class="container">
-        <div class="typing">
-        <p class="texto">Hi, i'm Andrew</p>
-        </div>
-        <button class="subtexto-button" onclick="toggleDescription()">> Open description.sh </button> <br>
-        <button class="stack-button" onclick="toggleStack()" style="margin-bottom: 2vh;">> Open stack.sh </button>
-        <p class="subtexto" style="--chars: 112ch; --steps:112;">Computer Science student @ Cesar School, interested in the areas of Front-End, Back-End, and Game Developing. </p>
-        <p class="subtexto" style="--chars: 95ch; --steps:95;">I have experience with Python, HTML, CSS, JS, C, Java, Django, Spring, Unity, and many more. </p>
-        <p class="stack" style="--chars: 75ch; --steps:75;">Programming languages: Python, C, C#, Java, TypeScript, JavaScript, SQL </p>
-        <p class="stack" style="--chars: 44ch; --steps:44;">Frameworks: Django, Spring, Flask, React </p> 
-        <p class="stack" style="--chars: 48ch; --steps:48;">Tools: Git, Docker, Postman, VS Code, IntelliJ</p>
-   
-    </div>
-    </section>
-    <section id="portifolio"></section>
-    <h1 class="title"> Portfolio </h1>
-    <div class="container-img">
-        <div class="imagem"> <h2> Kolekto </h2> <p> An e-commerce for colectors items. Built using HTML, CSS, Python and Django  </p> <a style="background-image: url(static/Kolekto.png);" href="https://github.com/P-E-N-T-E-S/Kolekto"></a></div>
-        <div class="imagem"> <h2> Sublime </h2> <p> An plataform for creating subtitles. Built using HTML, CSS, Java and Spring </p> <a style="background-image: url(static/Sublime.png);" href="https://github.com/P-E-N-T-E-S/SUBlime"></a> </div>
-        <div class="imagem"> <h2> BDGuest </h2> <p> An platform for agile management on restaurants. Built using HTML, CSS, JS, Java, Spring and MySQL </p> <a style="background-image: url(static/BDGuest.png);" href="https://github.com/P-E-N-T-E-S/BDGuest"></a> </div>
-        <div class="imagem"> <h2> VMM </h2> <p> An Virtual Memory management system, implemented in C. Made to simulate how a computer works when selecting processes to run on its CPU. </p><a style="background-image: url(static/VMM.png);" href="https://github.com/Nerebo/3Periodo/tree/main/Implementacao"></a>  </div>
-        <div class="imagem"> <h2> Focus Cube </h2> <p> An application for supporting a enbedded device, it is responsible for monitoring and displaying an interactive and intuitive dashboard, updated in real time and made using Flask framework for Python and a MQTT queue for Embedded - Backend comunication  </p> <a style="background-image: url(static/Focus_Cube_Front.png);" href="https://github.com/joaovfittipaldi/focus-cube"></a> </div>
-        <div class="imagem"> <h2> Vuln Report - GLHF </h2> <p> Black-box style vulnerability analisys and report. <br> Tools used in the analisys are Burp Suite Community for monitoring and altering payloads, Python Scripts for Brute-Forcing and Docker  </p><a style="background-image: url(static/Capa_GLHF.png);" href="https://nerebo.github.io/glhf-vuln-webapp-report/"></a>  </div>
-        
-</div>
-    <section id="contato">
-        <footer>
-            <div class="footer">
-            <a href="https://www.linkedin.com/in/andrel-fonseca/" style="background-image: url(static/linkedin.png); background-size: cover;" > </a>  
-            <a href="https://github.com/Nerebo" style="background-image: url(static/github.png); background-size: cover;"> </a> 
-            <a href="andregoesf@gmail.com" style="background-image: url(static/gmail.png); background-size: cover;"> </a> 
-            </div>
-        </footer>
-    </section>
-
-    
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Andrew Fonseca, software developer and Computer Science student." />
+    <meta name="theme-color" content="#050806" />
+    <title>Andrew Fonseca — Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
